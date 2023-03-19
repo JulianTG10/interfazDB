@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="375dp"
+        android:layout_height="704dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077">
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="@string/tvTitulo" />
+
+        <EditText
+            android:id="@+id/etDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etDocumento"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etNombres"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etApellidos"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etUsuarios"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etContra"
+            android:inputType="textPersonName" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="490px"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrar" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="490px"
+                android:layout_height="wrap_content"
+                android:text="@string/btnBuscar" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="490px"
+                android:layout_height="wrap_content"
+                android:text="@string/btnListar" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="490px"
+                android:layout_height="wrap_content"
+
+                android:text="@string/btnLimpiar" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lvLista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
